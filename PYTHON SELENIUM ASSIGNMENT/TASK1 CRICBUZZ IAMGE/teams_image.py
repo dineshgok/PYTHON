@@ -22,4 +22,4 @@ img=driver.find_elements_by_xpath("//div[contains(@class,'cb-col cb-col-25')]")
 for i,j in zip(img,im2):   
     with open(j+".png","wb") as image:
         image.write(i.screenshot_as_png)
-driver.close
+driver.close()
